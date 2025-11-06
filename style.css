@@ -33,7 +33,12 @@ section {
 }
 
 img {
-  max-width: 200px;
-  border-radius: 50%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
+.imagem-extra {
+  margin-top: 15px;
+  width: 250px;
+}
