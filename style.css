@@ -91,7 +91,9 @@ section h2::after {
 }
 
 #sobre img {
-  max-width: 200px;
+  /* MODIFICAÇÃO: Tamanho da imagem reduzido para 150px e proporção mantida */
+  max-width: 150px;
+  height: auto;
   border-radius: 30%;
   border: 5px solid #9e4dcc;
 }
@@ -126,5 +128,3 @@ section h2::after {
   color: #710077;
   margin-top: 15px;
 }
-
-/* ---------*
