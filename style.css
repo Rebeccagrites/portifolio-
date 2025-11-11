@@ -117,6 +117,7 @@ section h2::after {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(113, 0, 119, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer; /* Adicionado para indicar que o card é clicável */
 }
 
 .card:hover {
@@ -127,4 +128,13 @@ section h2::after {
 .card h3 {
   color: #710077;
   margin-top: 15px;
+}
+
+/* --- NOVO ESTILO PARA IGUALAR O TAMANHO DAS IMAGENS DOS PROJETOS --- */
+.projeto-imagem {
+  width: 100%; /* Garante que a imagem ocupe a largura total do card */
+  height: 180px; /* Altura fixa para todas as imagens, garantindo que sejam iguais */
+  object-fit: cover; /* Recorta a imagem para cobrir a área sem distorcer, mantendo a proporção */
+  border-radius: 10px; /* Borda levemente arredondada para combinar com o card */
+  margin-bottom: 10px;
 }
