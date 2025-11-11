@@ -59,7 +59,7 @@ nav a:hover {
   text-shadow: 0 0 10px #d580ff;
 }
 
-/* ---------- SEÇÕES ---------- */
+/* ---------- SEÇÕES GERAIS ---------- */
 section {
   padding: 60px 10%;
   text-align: center;
@@ -78,6 +78,7 @@ section h2::after {
   font-size: 1.2em;
 }
 
+/* ---------- SEÇÃO SOBRE MIM ---------- */
 #sobre {
   background-color: #ffffff;
   border-radius: 15px;
@@ -91,7 +92,6 @@ section h2::after {
 }
 
 #sobre img {
-  /* MODIFICAÇÃO: Tamanho da imagem reduzido para 150px e proporção mantida */
   max-width: 200px;
   height: auto;
   border-radius: 50%;
@@ -103,7 +103,7 @@ section h2::after {
   text-align: left;
 }
 
-/* ---------- PROJETOS ---------- */
+/* ---------- SEÇÃO PROJETOS ---------- */
 #projetos .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -117,7 +117,7 @@ section h2::after {
   padding: 20px;
   box-shadow: 0 4px 10px rgba(113, 0, 119, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
-  cursor: pointer; /* Adicionado para indicar que o card é clicável */
+  cursor: pointer;
 }
 
 .card:hover {
@@ -130,11 +130,130 @@ section h2::after {
   margin-top: 15px;
 }
 
-/* --- NOVO ESTILO PARA IGUALAR O TAMANHO DAS IMAGENS DOS PROJETOS --- */
+/* ESTILO PARA IGUALAR O TAMANHO DAS IMAGENS DOS PROJETOS */
 .projeto-imagem {
-  width: 100%; /* Garante que a imagem ocupe a largura total do card */
-  height: 180px; /* Altura fixa para todas as imagens, garantindo que sejam iguais */
-  object-fit: cover; /* Recorta a imagem para cobrir a área sem distorcer, mantendo a proporção */
-  border-radius: 10px; /* Borda levemente arredondada para combinar com o card */
-  margin-bottom: 10px;
+  width: 100%;
+  height: 180px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Recorta a imagem para cobrir a área */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-ver-mais {
+    background-color: #8a00c8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-ver-mais:hover {
+    background-color: #5b0080;
+}
+
+/* ---------- NOVA SEÇÃO: LAGOINHA ARAUCÁRIA ---------- */
+#lagoinha {
+    background-color: #e0d9ed; /* Fundo diferente para destacar */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#lagoinha h2::after {
+    content: " 🕊️"; /* Ícone diferente para a igreja */
+}
+
+#lagoinha .info-igreja {
+    max-width: 600px;
+    margin: 30px auto 0;
+    padding: 20px;
+    border: 2px solid #9e4dcc;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#lagoinha .info-igreja p {
+    margin: 5px 0;
+    color: #555;
+    font-weight: 400;
+}
+
+/* ---------- NOVA SEÇÃO: CONTATO ---------- */
+#contato {
+    background-color: #ffffff;
+    padding-bottom: 80px; /* Mais espaço no final */
+}
+
+#contato h2::after {
+    content: " 💬"; /* Ícone diferente para contato */
+}
+
+.contato-info {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f6ff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(113, 0, 119, 0.1);
+    text-align: left;
+}
+
+.contato-info p {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.contato-info a {
+    color: #8a00c8;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.contato-info a:hover {
+    color: #5b0080;
+    text-decoration: underline;
+}
+
+.contato-info h3 {
+    color: #710077;
+    margin-top: 30px;
+    border-bottom: 2px solid #e0b3ff;
+    padding-bottom: 5px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #8a00c8;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.redes-sociais a:hover {
+    background-color: #5b0080;
+    transform: translateY(-3px);
+    text-decoration: none;
+}
+
+.icone-social {
+    /* Ajuste para alinhar ícone e texto */
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
