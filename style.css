@@ -257,3 +257,66 @@ section h2::after {
     align-items: center;
     gap: 5px;
 }
+/* ... Seu CSS existente ... */
+
+/* Estilo do Botão de Tema */
+#theme-toggle {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+#theme-toggle:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* -------------------- MODO ESCURO -------------------- */
+
+.dark-mode {
+    background-color: #121212; /* Fundo escuro principal */
+    color: #f0f0f0; /* Texto claro */
+}
+
+.dark-mode header {
+    background: linear-gradient(90deg, #1f0033, #3c0066); /* Gradiente escuro para o header */
+}
+
+.dark-mode #sobre,
+.dark-mode .contato-info {
+    background-color: #1e1e1e; /* Fundo escuro para seções brancas */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode section h2,
+.dark-mode .card h3,
+.dark-mode .contato-info h3 {
+    color: #e0b3ff; /* Títulos em lilás claro */
+}
+
+.dark-mode .contato-info a,
+.dark-mode nav a:hover {
+    color: #ff99ff; /* Links em rosa claro */
+}
+
+.dark-mode .btn-ver-mais,
+.dark-mode .redes-sociais a {
+    background-color: #5b0080; /* Botões em roxo escuro */
+}
+
+.dark-mode .btn-ver-mais:hover,
+.dark-mode .redes-sociais a:hover {
+    background-color: #3c0066; /* Botões mais escuros ao passar o mouse */
+}
+
+.dark-mode #theme-toggle {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+}
